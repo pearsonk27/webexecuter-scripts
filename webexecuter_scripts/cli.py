@@ -2,8 +2,9 @@
 import click
 from .task import refresh
 
+
 @click.command()
-@click.option('--task', default=1, help='Job to execute (ex. "refresh").')
+@click.option("--task", default=1, help='Job to execute (ex. "refresh").')
 def main(task):  # pragma: no cover
     """
     The main function executes on commands:
