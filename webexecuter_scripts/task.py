@@ -11,7 +11,6 @@ LOG_FILE = "/var/log/webexecuter/server-deploy.log"
 REPO_PATH = "/srv/git/webexecuter-server"
 
 logging.basicConfig(
-    filename=LOG_FILE,
     encoding="utf-8",
     level=logging.DEBUG,
     format="%(asctime)s %(levelname)s - LineNo %(lineno)d - %(message)s",
