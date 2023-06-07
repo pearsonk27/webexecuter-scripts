@@ -50,6 +50,8 @@ Stderr: {std_err}"""
 def local_repo_is_behind():
     """Determine if a git pull and deployment is necessary"""
     repo = git.Repo(REPO_PATH)
+    for remote in repo.remotes:
+        remote.fetch()
     status = repo.git.status()
 
     logging.info("Repo status: %s", status)
