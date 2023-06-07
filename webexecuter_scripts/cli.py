@@ -4,7 +4,7 @@ from .task import refresh
 
 
 @click.command()
-@click.option("--task", prompt='Task to run?', help='Job to execute (ex. "refresh").')
+@click.option("--task", prompt="Task to run?", help='Job to execute (ex. "refresh").')
 def main(task):  # pragma: no cover
     """
     The main function executes on commands:
