@@ -14,7 +14,7 @@ logging.basicConfig(
     encoding="utf-8",
     level=logging.DEBUG,
     format="%(asctime)s %(levelname)s - LineNo %(lineno)d - %(message)s",
-    handlers=[RotatingFileHandler(LOG_FILE, maxBytes=20, backupCount=5)],
+    handlers=[RotatingFileHandler(LOG_FILE, maxBytes=10000, backupCount=5)],
 )
 
 
